@@ -5,7 +5,7 @@
 int main()
 {
     int n, i;
-    unsigned long int factorial = 1;
+    unsigned long long factorial = 1;
     printf("Enter number: ");
     scanf("%d", &n);
 
@@ -13,6 +13,6 @@ int main()
     {
         factorial *= i;
     }
-    printf("Factorial of %d = %ld\n", n, factorial);
+    printf("Factorial of %d = %llu\n", n, factorial);
     return 0;
 }
