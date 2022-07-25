@@ -4,10 +4,10 @@
 
 int main()
 {
-    float pi = 3.14159265359, area;
-    int radius;
+    float pi = 3.141592, area, radius;
+
     printf("Enter Radius of circle: ");
-    scanf("%d", &radius);
+    scanf("%f", &radius);
     area = pi * (radius * radius);
     printf("Area of circle = %f\n", area);
 

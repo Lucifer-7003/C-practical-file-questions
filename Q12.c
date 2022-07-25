@@ -13,7 +13,6 @@
 // Division=
 
 #include <stdio.h>
-
 int main()
 {
     char name[15], rollNo[6];
@@ -35,11 +34,11 @@ int main()
     scanf("%f", &tal);
     printf("DS: ");
     scanf("%f", &ds);
-    printf("\n\n\n");
+    printf("\n");
 
     printf("Name: %s\n", name);
     printf("Roll No: %s\n", rollNo);
-    printf("\nMarks of subject\n");
+    printf("Marks of subject\n");
     printf("C: %0.2f\n", c);
     printf("Foc: %0.2f\n", foc);
     printf("Cs: %0.2f\n", cs);

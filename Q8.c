@@ -4,20 +4,19 @@
 
 int main()
 {
-    int a = 0, b = 1, c, i, n;
+    int t1 = 0, t2 = 1, i, n;
+    int nt = t1 + t2;
     printf("Enter number of terms: ");
     scanf("%d", &n);
 
-    printf("Fibonacci Series: %d, %d", a, b);
+    printf("Fibonacci Series: %d, %d", t1, t2);
     for (i = 3; i <= n; ++i)
     {
-        c = a + b;
-        printf(", %d", c);
-        a = b;
-        b = c;
-        c = 0;
+        printf(", %d", nt);
+        t1 = t2;
+        t2 = nt;
+        nt = t1 + t2;
     }
     printf("\n");
-
     return 0;
 }

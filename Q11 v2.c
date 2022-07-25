@@ -5,35 +5,28 @@
 // 	4. 12Rs for	1000+ units
 
 #include <stdio.h>
-
 int main()
 {
     int units, amt;
     printf("Enter Bill units: ");
     scanf("%d", &units);
 
-    if (units <= 200)
+    if (units > 1000)
     {
-        amt += units * 5;
-    }
-    else if (units <= 500)
-    {
-        amt += 200 * 5;
-        amt += (units - 200) * 7;
-    }
-    else if (units <= 1000)
-    {
-        amt += 200 * 5;
-        amt += 300 * 7;
-        amt += (units - 500) * 9;
-    }
-    else
-    {
-        amt += 200 * 5;
-        amt += 300 * 7;
-        amt += 500 * 9;
         amt += (units - 1000) * 12;
+        units = 1000;
     }
+    if (units > 500)
+    {
+        amt += (units - 500) * 9;
+        units = 500;
+    }
+    if (units > 200)
+    {
+        amt += (units - 200) * 7;
+        units = 200;
+    }
+    amt += units * 5;
     printf("total bill = Rs %d\n", amt);
     return 0;
 }
